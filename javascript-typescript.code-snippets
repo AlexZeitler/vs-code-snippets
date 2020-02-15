@@ -1,0 +1,8 @@
+{
+  "Promise": {
+    "prefix": "rp",
+    "scope": "typescript,javascript",
+    "body": ["return new Promise((resolve, reject) => {$0})"],
+    "description": "Return new Promise"
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"Mocha_describe_it": {
+		"prefix": "mdi",
+		"scope": "typescript",
+		"body": [
+			"describe('$1', (): void => {",
+			"  it('should $2', done => {",
+			"    $0",
+			"    done();",
+			"  });",
+			"});"
+		],
+		"description": "Mocha describe + it"
+	},
+	"Mocha_describe": {
+		"prefix": "md",
+		"scope": "typescript",
+		"body": [
+			"describe('$1', (): void => {",
+			"$0",
+			"})"
+		],
+		"description": "Mocha describe"
+	},
+	"Mocha_it": {
+		"prefix": "mi",
+		"scope": "typescript",
+		"body": [
+			"  it('should $1', done => {",
+			"    $0;",
+			"    done();",
+			"  });",
+		],
+		"description": "Mocha it"
+	}
+}
