@@ -1,0 +1,33 @@
+{
+  "useState": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "rus",
+    "body": ["const [$1, set${1/(.*)/${1:/capitalize}/}] = useState($2)"],
+    "description": "useState hook"
+  },
+  "onChangeInputText": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "rioc",
+    "body": "onChange={(event) => set$1(event.target.value)}",
+    "description": "React input text `onChanged` handler"
+  },
+  "React Component": {
+    "scope": "typescriptreact",
+    "prefix": "rc",
+    "body": [
+      "import React, { ReactElement } from 'react'",
+      "export function $1({$2} : {${2}${3}}): ReactElement { return(<div><div></div></div>) }"
+    ],
+    "description": "React component"
+  },
+  "React Component with children": {
+    "scope": "typescriptreact",
+    "prefix": "rcc",
+    "body": [
+      "import React, { ReactElement } from 'react'",
+      "type ${1}Props = WithChildren<{ $2 }>;",
+      "export function $3({$2, children } : ${1}Props): ReactElement { return(<div><div>{children}</div></div>) }"
+    ],
+    "description": "React component"
+  }
+}

@@ -1,1 +1,30 @@
-{}
+{
+    "ConditionFunctionGenericType": {
+		"prefix": "cfn",
+		"scope": "typescript",
+		"body": [
+			"export type ConditionFn<T> = (t: T) => boolean",
+		],
+		"description": "Generic Condition Function type definition"
+	},
+    "ConditionFunctionConcreteType": {
+		"prefix": "cfnc",
+		"scope": "typescript",
+		"body": [
+			"export type $1ConditionFn = ConditionFn<$1>",
+		],
+		"description": "Concrete Condition Function type definition from Generic type"
+	},
+    "ConditionFunctionImplemenation": {
+		"prefix": "cfni",
+		"scope": "typescript",
+		"body": [
+			"const $1 = (",
+  			  "$2: $3",
+            "): $4 => (x: $5) =>",
+			"$6"
+		],
+		"description": "Concrete Condition Function implementation"
+	},
+
+}
